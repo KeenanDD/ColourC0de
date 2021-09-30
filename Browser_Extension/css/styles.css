@@ -11,11 +11,17 @@ body {
     width: 100%;
 }
 
+.col-6 {
+    width: 50%;
+}
 
 .col-12 {
     width: 100%;
 }
 
+.col-4 {
+    width: 33.33%;
+}
 
 .row::after {
     content: "";

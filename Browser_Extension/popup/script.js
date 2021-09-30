@@ -4,6 +4,7 @@ function sendAction(action) {
     });
 }
 
+document.getElementById("sepia-toggle").onclick = () => sendAction("sepia-toggle");
 
 document.getElementById("grayscale-toggle").onclick = () => sendAction("grayscale-toggle");
 

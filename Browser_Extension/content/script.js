@@ -5,7 +5,9 @@ chrome.runtime.onMessage.addListener(msg => {
     if (msg.action === "invert-toggle") {
         toggleFilter("invert");
     }
-
+    if (msg.action === "sepia-toggle") {
+        toggleFilter("sepia")
+    }
 });
 
 
@@ -17,6 +19,10 @@ let styleFilters = {
     grayscale: {
         status: false,
         css: 'grayscale(100%)'
+    },
+    sepia: {
+        status: false,
+        css: 'sepia(100%)'
     }
 };
 
