@@ -1,0 +1,35 @@
+{
+  "name": "ColourC0de",
+  "version": "1.0.0",
+  "description": "Change viewport to suit vision needs or for more creative options",
+  "author": "Keenan Dobson",
+  "manifest_version": 2,
+  "permissions": [
+    "<all_urls>",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_title": "ColourC0de",
+    "default_popup": "/popup/popup.html",
+    "default_icon": {
+      "16": "assets/icon.16.jpg",
+      "48": "assets/icon.48.jpg",
+      "128": "assets/icon.128.jpg"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "/content/script.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "assets/icon.16.jpg",
+    "48": "assets/icon.48.jpg",
+    "128": "assets/icon.128.jpg"
+  }
+}
