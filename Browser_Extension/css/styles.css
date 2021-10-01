@@ -2,6 +2,12 @@ body {
     width: 300px;
 }
 
+h1 {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}
+
 .rows * {
     box-sizing: border-box;
 }
