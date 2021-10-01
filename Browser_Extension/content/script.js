@@ -8,6 +8,13 @@ chrome.runtime.onMessage.addListener(msg => {
     if (msg.action === "sepia-toggle") {
         toggleFilter("sepia")
     }
+    if (msg.action === "hue-toggle") {
+      toggleFilter("hue")
+    }
+    if (msg.action === "saturation-toggle") {
+      toggleFilter("saturate")
+    }
+    
 });
 
 
@@ -23,7 +30,16 @@ let styleFilters = {
     sepia: {
         status: false,
         css: 'sepia(100%)'
+    },
+    hue: {
+      status: false,
+      css: 'hue-rotate(270deg)'
+    },
+    saturate: {
+      status: false,
+      css: 'saturate(200%)'
     }
+
 };
 
 function toggleFilter(filter) {
